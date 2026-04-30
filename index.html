@@ -121,35 +121,12 @@
             margin-bottom: 15px;
         }
 
-        /* --- КАЛЕНДАРЬ --- */
-        .calendar-wrapper {
-            margin: 20px auto;
-            max-width: 300px;
-        }
-        .calendar-month {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 1.5rem;
-            margin-bottom: 10px;
-            text-transform: uppercase;
-        }
-        .calendar-grid {
-            display: grid;
-            grid-template-columns: repeat(7, 1fr);
-            gap: 5px;
-            font-size: 0.8rem;
-        }
-        .day-name {
-            font-weight: bold;
-            color: var(--accent-color);
-        }
-        .day {
-            padding: 8px 0;
-        }
-        .day.active {
-            background-color: var(--accent-color);
-            color: white;
-            border-radius: 50%;
-            font-weight: bold;
+        /* --- ФОТО photo3.jpg --- */
+        .photo-wrapper img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-top: 15px;
         }
 
         /* --- ТАЙМЕР --- */
@@ -203,17 +180,6 @@
         }
 
         /* --- МЕСТО И КАРТА --- */
-        .venue-photos {
-            display: flex;
-            gap: 10px;
-            margin-bottom: 20px;
-        }
-        .venue-photos img {
-            width: 50%;
-            height: 150px;
-            object-fit: cover;
-            border-radius: 4px;
-        }
         .btn-map {
             display: inline-block;
             background-color: var(--btn-color);
@@ -269,22 +235,14 @@
         </div>
     </div>
 
-    <!-- 2. ПРИГЛАШЕНИЕ И КАЛЕНДАРЬ -->
+    <!-- 2. ПРИГЛАШЕНИЕ + ФОТО -->
     <div class="section">
         <h2 class="section-title">Дорогие гости!</h2>
         <p>Мы будем рады разделить с вами радость нашего особенного дня.<br>Приглашаем вас на нашу свадьбу!</p>
         
-        <div class="calendar-wrapper">
-            <div class="calendar-month">Июнь 2026</div>
-            <div class="calendar-grid">
-                <div class="day-name">ПН</div><div class="day-name">ВТ</div><div class="day-name">СР</div><div class="day-name">ЧТ</div><div class="day-name">ПТ</div><div class="day-name">СБ</div><div class="day-name">ВС</div>
-                
-                <!-- Дни июня 2026 (1 июня - понедельник) -->
-                <div class="day">1</div><div class="day">2</div><div class="day">3</div><div class="day">4</div><div class="day">5</div><div class="day">6</div><div class="day">7</div>
-                <div class="day">8</div><div class="day">9</div><div class="day">10</div><div class="day">11</div><div class="day">12</div><div class="day">13</div><div class="day">14</div>
-                <div class="day">15</div><div class="day active">19</div><div class="day">20</div><div class="day">21</div><div class="day">22</div><div class="day">23</div><div class="day">24</div>
-                <div class="day">25</div><div class="day">26</div><div class="day">27</div><div class="day">28</div><div class="day">29</div><div class="day">30</div><div class="day"></div>
-            </div>
+        <!-- Фото photo3.jpg -->
+        <div class="photo-wrapper">
+            <img src="foto3.jpg" alt="Фото">
         </div>
     </div>
 

@@ -202,27 +202,6 @@
             margin-left: 10px;
         }
 
-        /* --- ДРЕСС КОД --- */
-        .palette {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-            margin: 20px 0;
-        }
-        .color-circle {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            border: 1px solid #ddd;
-        }
-        .dress-example-img {
-            width: 100%;
-            max-width: 400px;
-            height: auto;
-            border-radius: 8px;
-            margin-top: 15px;
-        }
-
         /* --- МЕСТО И КАРТА --- */
         .venue-photos {
             display: flex;
@@ -249,6 +228,20 @@
         }
         .btn-map:hover {
             background-color: #9a8a7a;
+        }
+
+        /* --- СТИЛИ ДЛЯ БЛОКА ФОТО ДРЕСС-КОДА --- */
+        .dress-wrapper {
+            max-width: 450px;
+            margin: 0 auto;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+        }
+
+        .dress-example-img {
+            width: 100%;
+            display: block;
         }
 
         /* --- ФУТЕР --- */
@@ -329,30 +322,19 @@
         </ul>
     </div>
 
-    <!-- 5. ДРЕСС-КОД -->
-    <div class="section">
-        <h2 class="section-title">Дресс-код</h2>
-        <p>Концепция нашей свадьбы: <strong>«Оливковая элегантность»</strong>.<br>
-        Будем благодарны, если вы поддержите гамму в своих нарядах.</p>
-        
-        <div class="palette">
-            <div class="color-circle" style="background:#f0f4f0;"></div>
-            <div class="color-circle" style="background:#d0dcd0;"></div>
-            <div class="color-circle" style="background:#b0c4b0;"></div>
-            <div class="color-circle" style="background:#8fa88f;"></div>
-            <div class="color-circle" style="background:#5c7a5c;"></div>
-        </div>
-
-        <!-- Фото для дресс-кода -->
-        <img src="foto2.jpg" alt="Примеры нарядов" class="dress-example-img">
-    </div>
-
-    <!-- 6. МЕСТО ПРОВЕДЕНИЯ -->
+    <!-- 5. МЕСТО ПРОВЕДЕНИЯ -->
     <div class="section">
         <h2 class="section-title">Место торжества</h2>
         <p><strong>Ресторан "Руслан"</strong><br>г. Оренбург, ул. Монтажников, 32/6</p>
         
         <a href="https://yandex.ru/maps/org/ruslan/1003328523/?ll=55.164490%2C51.807397&z=17" target="_blank" class="btn-map">Показать на карте</a>
+    </div>
+
+    <!-- 6. ФОТО ДРЕСС-КОДА (файл foto2.jpg) -->
+    <div class="section">
+        <div class="dress-wrapper">
+            <img src="foto2.jpg" alt="Примеры нарядов" class="dress-example-img">
+        </div>
     </div>
 
     <footer>
